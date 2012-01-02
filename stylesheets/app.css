@@ -1,0 +1,68 @@
+body {
+	background-color: #fefefe;
+	color:#212121;
+	margin: 0;
+	font-family: 'Patua One', cursive;
+}
+
+a {
+  display:inline;
+  color:green;
+  text-decoration:none;
+}
+
+div#outer {
+	width:800px;
+	margin: 0 auto;
+}
+
+textarea#word_input, a#go {
+  float:left;
+  width: 400px;
+  height:150px;
+}
+
+textarea#word_input {
+  width:390px;
+  margin-right:10px;
+}
+
+a#go {
+  line-height:150px;
+  text-align:center;
+  background-color:green;
+  color:white;
+  font-size:40px;
+  text-decoration:none;
+}
+
+a#go:active {
+  background-color:black;
+}
+
+
+h3 {
+  float:left;
+  clear:both;
+  width:100%;
+}
+
+#result_combo, #result_smash {
+  color:green;
+}
+
+#result {
+  display:none;
+}
+
+#words {
+  color:#999;
+}
+
+a#fork_me {
+  width:149px;
+  height:149px;
+  position:fixed;
+  top:0;
+  right:0;
+}
