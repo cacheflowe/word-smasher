@@ -9,4 +9,3 @@ This should help you come up with a new band name or company name.
 TODO:
 ---
 * Make sure words aren't combined with themselves
-* Create a class for just the word-smashing feature
