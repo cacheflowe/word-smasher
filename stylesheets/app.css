@@ -51,6 +51,17 @@ h3 {
   color:green;
 }
 
+span.wordsmash_combo {
+  color:green;
+}
+span.wordsmash_combo span.wordsmash_vowel {
+  color:#666;
+}
+
+span.wordsmash_result {
+  text-decoration:underline;
+}
+
 #result {
   display:none;
 }
