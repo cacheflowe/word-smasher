@@ -80,8 +80,8 @@ var WordSmasher = (function(){
     var outputWord1 = replaceLetterWithSpan( word1, word1vowelStop );
     var outputWord2 = replaceLetterWithSpan( word2, word2vowelStop );
 
-    // 
-    if( ( word1vowelStop != 0 && word2vowelStop != 0 ) || word1vowelStop == 0 ) {
+    // randomly decide to use the first word's vowel rather than the 2nd
+    if( ( word1vowelStop != 0 && word2vowelStop != word2.length - 1 ) ) {
       if( Math.random() > 0.5 ) {
         word1vowelStop++;
         word2vowelStop++;
