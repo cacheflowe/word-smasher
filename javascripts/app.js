@@ -68,9 +68,15 @@ var WordSmasher = (function(){
     var word1Vowels = getVowelPositions( word1 );
     var word2Vowels = getVowelPositions( word2 );
     
+    // if first word has more than one vowel, and the first letter is a vowel, get rid of it. same for the end of the 2nd word. this ensures a more substantial piece of the word remains.
+    if( word1Vowels.length > 1 && word1Vowels[ 0 ] == 0 ) word1Vowels.shift();
+    if( word2Vowels.length > 1 && word2Vowels[ word2Vowels.length - 1 ] == word2.length - 1 ) word2Vowels.pop();
+
+    // pick a random vowel to split on
     word1vowelStop = word1Vowels[ Math.round(Math.random() * ( word1Vowels.length - 1 ) ) ];
     word2vowelStop = word2Vowels[ Math.round(Math.random() * ( word2Vowels.length - 1 ) ) ];
     
+    // replace the split vowel with an underlined version
     var outputWord1 = replaceLetterWithSpan( word1, word1vowelStop );
     var outputWord2 = replaceLetterWithSpan( word2, word2vowelStop );
 
