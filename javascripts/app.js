@@ -42,7 +42,8 @@ var WordSmasher = (function(){
     
     // add new words to collection
     for( i=0; i < inputWords.length; i++ ){
-      if( _words.indexOf( inputWords[i] ) == -1 && inputWords[i].length > 0 ) {
+      // exclude repeated words, super short words, and words without standard vowels. sorry, sometimes y.
+      if( _words.indexOf( inputWords[i] ) == -1 && inputWords[i].length > 2 && getVowelPositions( inputWords[i] ).length > 0 ) {
         _words.push( inputWords[i] );
       }
     }
