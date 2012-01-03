@@ -6,7 +6,7 @@ This should help you come up with a new band name or company name.
 
 [Try WordSmasher](http://wordsmasher.lovethissh.it/)
 
-Todo:
+TODO:
 ---
-* Preferably should use more than just one letter from each word
-* make sure words aren't combined with themselves
+* Make sure words aren't combined with themselves
+* Create a class for just the word-smashing feature
