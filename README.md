@@ -4,7 +4,7 @@ Input a list of words and they'll be smashed together on a random vowel. You'll 
 
 This should help you come up with a new band name or company name. 
 
-[Try WordSmasher](http://wordsmasher.lovethissh.it/)
+[Try WordSmasher](http://cacheflowe.github.io/word-smasher/)
 
 TODO:
 ---
